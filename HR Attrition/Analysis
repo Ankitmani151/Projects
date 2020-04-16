@@ -1,0 +1,15 @@
+1. Not performning any analysis on "EmployeeCount" and "EmployeeNumber"
+2. All are "18+" and "StandardHours" so need to consider this Column/Feature
+
+
+# For continuos data box plot:
+sns.boxplot(y='DailyRate', x='Attrition',data=data)
+
+#For Categorical nominal/ordinal data
+sns.factorplot(x='Attrition', col='DailyRate', kind='count', data=data)
+to find relation between JobRole and Department and EducationField
+
+
+# need to check tomorw if manager is same "YearsWithCurrManager" and they are unhappy people who left the job
+# Need to check relation between  years in current role and job
+#
