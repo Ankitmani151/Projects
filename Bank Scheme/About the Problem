@@ -1,0 +1,6 @@
+About the Problem:
+We are given the data of direct marketing campaigns (phone calls) of a Portuguese banking institution. 
+The classification goal is to predict if the client will subscribe a term deposit (target variable y). 
+This case study is inspired by this research paper where the researchers have used a very similar dataset as the one we will be using throughout this case study for determining the success of Bank Telemarketing. 
+The researchers in their paper have mentioned that the best result they have got was a AUC score of 0.8 and a ALIFT of 0.7. 
+So as a goal we will try to produce a similar result in our case study.
