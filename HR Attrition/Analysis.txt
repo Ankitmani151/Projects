@@ -1,0 +1,173 @@
+1. Not performning any analysis on "EmployeeCount" and "EmployeeNumber"
+2. All are "18+" and "StandardHours" so need to consider this Column/Feature
+
+
+# For continuos data box plot:
+sns.boxplot(y='DailyRate', x='Attrition',data=data)
+
+#For Categorical nominal/ordinal data
+sns.factorplot(x='Attrition', col='DailyRate', kind='count', data=data)
+to find relation between JobRole and Department and EducationField
+
+
+# need to check tomorw if manager is same "YearsWithCurrManager" and they are unhappy people who left the job
+# Need to check relation between  years in current role and job
+#
+#sns.axes_style('whitegrid')
+sns.factorplot('Department', data=data, aspect=1, kind='count', hue='Attrition', palette=['C2', 'C1']).set_ylabels('Number of Employees')
+_________________________________________________________________
+1.Age
+People in age group 28-39 have high chances of leaving job
+People in age group 31-43 have less chances of leaving job
+People in the age group 18-21 have bery high chances of leaving the job
+
+2.Travel 
+People who travel frquently have high chances of leaving job
+
+3.Daily rate
+People with daily rate 699 have high chances of leaving
+People with daily rate 817 have low chances of leaving
+
+4.Department
+There is almost no relationship between Attrition and department
+
+5.DistanceFromHome
+DistanceFromHome and atrrition are not at all related
+
+6.Education
+Education and atrrition are not at all related
+
+7.EducationField
+EducationField		Attrition
+Human Resources		0.259259
+Technical Degree	0.242424
+People from human resource and Education field have high chances of leaving job
+
+8.EnvironmentSatisfaction
+EnvironmentSatisfaction		Attrition
+1				0.253521
+Attrtion rate is high if Environment Satisfaction is 1
+
+9.Gender
+Gender and atrrition are not at all related.
+
+10.Hourly rate
+Hourly rate and atrrition are not at all related.
+
+11.JobInvolvement
+Attrition rate is high if JobInvolvement is less/1
+JobInvolvement	Attrition
+1		0.337349
+
+12.JobLevel (need to check with age)
+Attrition rate is high if JobLevel is less/1
+JobLevel	Attrition
+1		0.263352
+
+13.JobRole
+Attrition rate is high for job roles like Sales Representative
+JobRole			Attrition
+Sales Representative	0.397590
+Laboratory Technician	0.239382
+Human Resources		0.230769
+
+14.JobSatisfaction
+Attrition rate is high if JobSatisfaction is less/1
+
+15.MaritalStatus(need to check with age)
+Attrition rate is high if Martial status is single
+MaritalStatus	Attrition
+Single		0.255319
+
+16.MonthlyIncome
+It has got many outliers 
+Attrition rate is high in case of low Monthly income
+average salary for employees leaving job:3202.0
+average salary for employees staying in job:5204
+
+17.MonthlyRate
+MonthlyRate and atrrition are not at all related. 
+
+18. NumCompaniesWorked
+NumCompaniesWorked	Attrition
+5			0.253968
+9			0.230769
+7			0.229730
+6			0.228571
+
+People who have worked in 5 or more companies have high channes of leaving the company.
+
+18.OverTime
+OverTime	Attrition
+Yes		0.305288
+No		0.104364
+
+People who do overtime have very high chanes of leaving job
+
+19.PercentSalaryHike
+
+This data set is confusing  as people with more than 20% hike leaves the company but peope who got 25% are not leaving the company.
+PercentSalaryHike	Attrition
+24			0.285714
+22			0.214286
+23			0.214286
+
+20.PerformanceRating
+PerformanceRating and atrrition are not at all related.
+
+21.RelationshipSatisfaction
+RelationshipSatisfaction is not a strong factor for iteration
+RelationshipSatisfaction	Attrition
+1				0.206522
+3				0.154684
+
+22.StockOptionLevel
+Attrition is high if StockOptionLevel is not there.
+StockOptionLevel	Attrition
+0			0.244057
+3			0.176471
+1			0.093960
+2			0.075949
+
+23.TotalWorkingYears
+TotalWorkingYears
+People with more Total working years have less chances of leaving job
+people with avergae total working years 7.000000 have high chances of leaving job
+
+24.WorkLifeBalance
+Attrition rate is high if WorkLifeBalance is less/1
+WorkLifeBalance		Attrition
+1			0.312500
+4			0.176471
+2			0.168605
+3			0.142217
+
+25.YearsAtCompany
+it has got lots of outliers.
+people who have spent average 3 years have high chances of leavig the job.
+
+26.YearsInCurrentRole
+it has got lots of outliers.
+its not impacting much.
+
+27.YearsSinceLastPromotion
+it has got lots of outliers.
+its not impacting.
+
+28.YearsWithCurrManager
+it has got lots of outliers.
+its not impacting much.
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
