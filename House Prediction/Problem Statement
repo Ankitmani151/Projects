@@ -1,0 +1,4 @@
+Need to predict the house price based on the factors
+Independent variable X = house[['area', 'rooms', 'bathroom', 'floors', 'driveway', 'game_room',
+       'cellar', 'gas', 'air', 'garage', 'situation']]
+Dependent variable y = house['price']
